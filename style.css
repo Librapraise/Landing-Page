@@ -6,7 +6,7 @@
 
 #header {
   height: 100vh;
-  background-image: url(/imgs/bg-hero-desktop.svg);
+  background-image: url(./imgs/bg-hero-desktop.svg);
   background-position: center;
   background-size: cover;
   background-color: hsl(213, 100%, 98%);
@@ -322,7 +322,7 @@ ul li a {
   /*---header---*/
   #header {
     height: 100vh;
-    background-image: url(/imgs/bg-hero-mobile.svg);
+    background-image: url(./imgs/bg-hero-mobile.svg);
     background-position: center;
     background-size: cover;
     background-color: hsl(213, 100%, 98%);
