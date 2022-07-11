@@ -118,6 +118,7 @@ p {
 }
 .grow-col img{
   width: 100%;
+  padding: 20px;
 }
 .row h2 {
   color: hsl(192, 100%, 9%);
