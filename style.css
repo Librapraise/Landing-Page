@@ -15,6 +15,8 @@
   background-size: cover;
   background-color: hsl(213, 100%, 98%);
   margin-bottom: 10em;
+  animation: introLoad 2s forwards;
+  height: 100vh;
 }
 
 nav {
@@ -115,10 +117,13 @@ p {
 .grow-col{
   flex-basis: 50%;
   min-width: 350px;
+  transition: .5s;
 }
 .grow-col img{
   width: 100%;
-  padding: 20px;
+}
+.grow-col:hover{
+  transform: translateY(-10px);
 }
 .row h2 {
   color: hsl(192, 100%, 9%);
@@ -159,15 +164,17 @@ p {
   line-height: 22px;
   padding-left: 30px;
 }
-.flow img {
-  width: 23em;
-}
+
 .flow-col{
   flex-basis: 50%;
   min-width: 350px;
+  transition: .5s;
 }
 .flow-col img{
   width: 100%;
+}
+.flow-col:hover{
+  transform: translateY(-10px);
 }
 
 /*---Users---*/
@@ -194,9 +201,14 @@ p {
 .user-col{
   flex-basis: 50%;
   min-width: 350px;
+  transition: .5s;
 }
 .user-col img{
   width: 100%;
+  
+}
+.user-col:hover{
+  transform: translateY(-10px);
 }
 
 /*-----Ready----*/
@@ -478,4 +490,13 @@ ul li a {
 }
 
 
+}
+
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
